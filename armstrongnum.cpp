@@ -6,11 +6,11 @@ int main()
 	cout<<"enter the number";
 	cin>>num;
     temp=num;
-    while(temp!=NULL)
+    while(temp!=0)
     {
     	r=temp%10;
     	sum+=r*r*r;
-    	num=num/10;
+    	temp=temp/10;
     }
     if(sum==num)
     cout<<"the number is an armstrong number";
